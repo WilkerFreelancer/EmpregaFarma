@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menu de navegação -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vagas.html">Vagas</a></li>
+                <li><a href="curriculos.html">Currículos</a></li>
+                <li><a href="cadastro-curriculo.html">Cadastrar Currículo</a></li>
+                <li><a href="cadastro-farmacia.html">Cadastrar Farmácia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Filtro de busca de currículos -->
+    <section id="filtro-curriculos">
+        <h2>Buscar Currículos</h2>
+        <form>
+            <input type="text" placeholder="Buscar por nome ou localização..." name="search">
+            <select name="categoria">
+                <option value="">Categoria</option>
+                <option value="farmaceutico">Farmacêutico</option>
+                <option value="administrativo">Administrativo</option>
+                <option value="tecnico">Técnico</option>
+            </select>
+            <select name="localizacao">
+                <option value="">Localização</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="mg">Minas Gerais</option>
+            </select>
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
+
+    <!-- Lista de currículos -->
+    <section id="curriculos">
+        <h2>Currículos Disponíveis</h2>
+
+        <div class="curriculo">
+            <img src="foto1.jpg" alt="Foto do Candidato" class="foto-candidato">
+            <div class="detalhes-candidato">
+                <h3>João Silva</h3>
+                <p>Área: Farmacêutico | Localização: São Paulo</p>
+                <button onclick="window.location.href='detalhes-curriculo.html'">Ver Detalhes</button>
+            </div>
+        </div>
+
+        <div class="curriculo">
+            <img src="foto2.jpg" alt="Foto do Candidato" class="foto-candidato">
+            <div class="detalhes-candidato">
+                <h3>Maria Souza</h3>
+                <p>Área: Técnico | Localização: Rio de Janeiro</p>
+                <button onclick="window.location.href='detalhes-curriculo.html'">Ver Detalhes</button>
+            </div>
+        </div>
+
+        <div class="curriculo">
+            <img src="foto3.jpg" alt="Foto do Candidato" class="foto-candidato">
+            <div class="detalhes-candidato">
+                <h3>Lucas Oliveira</h3>
+                <p>Área: Administrativo | Localização: Minas Gerais</p>
+                <button onclick="window.location.href='detalhes-curriculo.html'">Ver Detalhes</button>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>

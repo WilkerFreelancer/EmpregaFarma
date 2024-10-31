@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre o Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menu de navegação -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vagas.php">Vagas</a></li>
+                <li><a href="curriculos.php">Currículos</a></li>
+                <li><a href="cadastro-curriculo.html">Cadastrar Currículo</a></li>
+                <li><a href="cadastro-farmacia.html">Cadastrar Vaga</a></li>
+                <li><a href="sobre.html">Sobre o Site</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Apresentação -->
+    <section id="apresentacao">
+        <h2>Sobre o Site</h2>
+        <img src="foto-do-dono.jpg" alt="Foto do Dono" id="foto-dono">
+        <p>Site desenvolvido por [Seu Nome]</p>
+        <div class="redes-sociais">
+            <a href="https://instagram.com/seuusuario" target="_blank">Instagram</a>
+            <a href="https://linkedin.com/in/seuusuario" target="_blank">LinkedIn</a>
+            <a href="https://facebook.com/seuusuario" target="_blank">Facebook</a>
+        </div>
+    </section>
+
+    <!-- Blog/Feed de Atualizações -->
+    <section id="blog">
+        <h2>Blog/Feed de Atualizações</h2>
+        <article class="post">
+            <h3>Título da Postagem</h3>
+            <p><strong>Data de Publicação:</strong> 23 de Outubro de 2024</p>
+            <p>Conteúdo da postagem...</p>
+            <div class="comentarios">
+                <h4>Comentários:</h4>
+                <form action="submit-comentario.php" method="POST">
+                    <label for="nome-comentario">Nome:</label>
+                    <input type="text" id="nome-comentario" name="nome-comentario" required>
+                    <label for="comentario">Comentário:</label>
+                    <textarea id="comentario" name="comentario" rows="3" required></textarea>
+                    <button type="submit">Enviar Comentário</button>
+                </form>
+            </div>
+        </article>
+        <!-- Adicione mais postagens conforme necessário -->
+    </section>
+
+    <!-- Seção de Resultados -->
+    <section id="resultados">
+        <h2>Resultados</h2>
+        <p>Até agora, <strong>[número]</strong> pessoas conseguiram emprego através do nosso site!</p>
+    </section>
+
+</body>
+</html>

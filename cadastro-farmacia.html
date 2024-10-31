@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Farmácias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menu de navegação -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vagas.php">Vagas</a></li>
+                <li><a href="curriculos.php">Currículos</a></li>
+                <li><a href="cadastro-curriculo.html">Cadastrar Currículo</a></li>
+                <li><a href="cadastro-farmacia.html">Cadastrar Vaga</a></li>
+                <li><a href="sobre.html">Sobre o Site</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Formulário de cadastro de farmácia -->
+    <section id="cadastro-farmacia">
+        <h2>Cadastrar Farmácia</h2>
+        <form action="submit-farmacia.php" method="POST" enctype="multipart/form-data">
+            <label for="nome-farmacia">Nome da Farmácia:</label>
+            <input type="text" id="nome-farmacia" name="nome-farmacia" required>
+
+            <label for="localizacao-farmacia">Localização:</label>
+            <input type="text" id="localizacao-farmacia" name="localizacao-farmacia" required>
+
+            <label for="telefone-farmacia">Telefone:</label>
+            <input type="text" id="telefone-farmacia" name="telefone-farmacia" required>
+
+            <label for="email-farmacia">E-mail:</label>
+            <input type="email" id="email-farmacia" name="email-farmacia" required>
+
+            <label for="foto-farmacia">Foto de Perfil da Farmácia:</label>
+            <input type="file" id="foto-farmacia" name="foto-farmacia" accept="image/*" required>
+
+            <label for="descricao-farmacia">Descrição da Vaga:</label>
+            <textarea id="descricao-farmacia" name="descricao-farmacia" rows="4"></textarea>
+
+            <button type="submit">Cadastrar Farmácia</button>
+        </form>
+    </section>
+
+</body>
+</html>
